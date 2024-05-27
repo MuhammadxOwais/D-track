@@ -1,0 +1,455 @@
+/* universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.lobster {
+    font-family: 'Lobster';
+    font-size: 22px;
+}
+.ballo_bhi{
+    font-family: 'Baloo Bhai' !important;
+}
+.main {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+/* left */
+.left {
+
+    width: 15vw;
+    height: 100vh;
+    background-color: #16151a;
+}
+
+.left .logo {
+    padding-left: 29px;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-right: 1px solid rgb(68, 66, 66);
+    border-bottom: 1px solid rgb(68, 66, 66);
+}
+
+.left .logo h3 {
+    font-size: 29px;
+}
+
+.left .library {
+    width: 100%;
+    height: 70vh;
+    border-right: 1px solid rgb(68, 66, 66);
+    border-bottom: 1px solid rgb(68, 66, 66);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.left .library ul {
+    padding-left: 29px;
+    margin-top: 2vh;
+}
+
+.left .library ul li {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 15px;
+    color: #c0c0c0;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.left .library ul li .fa {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.left .library ul li:hover .fa {
+    color: #25a56a;
+    transition: 0.3s ease-in-out;
+}
+
+.left .library ul li svg {
+    color: #c0c0c0;
+}
+
+.left .library ul li:hover svg {
+    color: #25a56a;
+    transition: color 0.3s ease-in-out;
+}
+
+.left .library ul li:hover {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+#dropdown_main {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.left .library .dropdown_main {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left .library .dropdown_main .dropdown_svg {
+    width: 100%;
+    padding-left: 29px;
+}
+
+.left .library .dropdown_main .dropdown {
+    margin-top: 15px;
+    width: 100%;
+    height: 15vh;
+    overflow-y: scroll;
+    background-color: #222227;
+    padding: 10px 0px;
+    display: none;
+}
+
+.dropdown span {
+    padding-left: 29px;
+    font-size: 14px;
+    color: #c0c0c0;
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.dropdown span:hover {
+    color: #25a56a;
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown span b {
+    color: #25a56a;
+    cursor: pointer;
+}
+
+.left .library .dropdown_main:hover svg {
+    color: #25a56a;
+    transition: color 0.3s ease-in-out;
+}
+
+.left .library .dropdown_main:hover span {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.left .master_play {
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgb(68, 66, 66);
+}
+
+.left .master_play .poster {
+    width: 40%;
+    height: 40%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.left .master_play .poster img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.left .master_play .subtitle {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.left .master_play .subtitle p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.left .master_play .master_play_icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.left .master_play .seekbar {
+    width: 90%;
+    height: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left .master_play .seekbar .progress {
+    width: 70%;
+    position: relative;
+
+}
+
+.left .master_play .seekbar .progress .progress-bar {
+    background-color: #c0c0c0;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.left .master_play .seekbar .progress .circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #25a56a;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+}
+
+.left .master_play .volume {
+
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .master_play .volume .volume_icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left .master_play .volume .volume_icon .volume_progress {
+    position: relative;
+    width: 100%;
+}
+
+.left .master_play .volume .volume_icon .volume_progress .volume_progress-bar {
+    background-color: #c0c0c0;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.left .master_play .volume .volume_icon .volume_progress .volume_progress-bar_circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #25a56a;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+}
+
+.left .master_play .volume .playlist {
+    margin-right: 10px;
+}
+
+
+
+/* right */
+.right {
+    background-color: #16151a;
+    width: 85vw;
+    height: auto;
+}
+
+.right .navbar {
+    width: 100%;
+    height: 7vh;
+    border-bottom: 1px solid rgb(68, 66, 66);
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .icons {
+    padding: 0px 20px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+}
+
+.right .anchorlinks a {
+    font-size: 16px;
+    color: #c0c0c0;
+    font-weight: 600;
+    padding: 11px 10px;
+    text-decoration: none;
+}
+
+.right .login {
+    width: auto;
+    height: 100%;
+}
+
+.right .navbar .searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 0;
+}
+
+.right .navbar .searchbox input {
+    width: 250px;
+    padding: 11px 13px;
+    background-color: #222227;
+    border: none;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+input::placeholder {
+    color: #c0c0c0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right .navbar .searchbox .fa {
+    background-color: #222227;
+    padding: 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+    color: #c0c0c0;
+    font-size: 18px;
+}
+
+.right .navbar .signin {
+
+    padding: 10px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.right .navbar .signin a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.right .navbar .signin .fa {
+    font-size: 22px;
+    color: #c0c0c0;
+}
+
+.right .carousel {
+    width: 95%;
+    margin: 4vh auto;
+    height: 45vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.right .carousel .slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    transition: 1s linear;
+}
+
+.right .carousel .carousel_icons {
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    bottom: 20px;
+    gap: 12px;
+    display: flex;
+}
+
+.right .carousel .carousel_icons svg:hover {
+    color: #25a56a;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.carousel .carousel_previous,
+.carousel .carousel_next {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel .carousel_content {
+    width: 50%;
+    height: 66%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #fff;
+   
+}
+
+.carousel_content .content {
+    display: none;
+}
+.carousel_content .content h2{
+    font-size: 2.5rem;
+}
+.carousel_content .content p{
+    margin-top: 2%;
+    font-size: 1.2rem;
+    color: #cecaca;
+}
+.carousel_content .content .button_1{
+    border: none;
+    background-color: #25a56a;
+    color: white;
+    padding: .8rem 1.5rem;
+    font-size: 20px;
+    font-family: 'Baloo Bhai';
+    border-radius: 10px;
+    margin-top: 2%;
+
+}
+.carousel_content .content .button_2{
+    border: none;
+    background-color: #25a56a;
+    color: white;
+    padding: .8rem 1.5rem;
+    font-size: 20px;
+    font-family: 'Baloo Bhai';
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 10px;
+}
+.carousel_content .content button:hover{
+    cursor: pointer;
+    background-color: #222227;
+    transition: 0.3s linear;
+    color: #25a56a;
+}
+
+.content.active {
+    display: block;
+}
